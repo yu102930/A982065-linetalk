@@ -30,7 +30,7 @@ public class LineBotApp : WebhookApplication
                 //使用者輸入的文字
                 var text = ((TextEventMessage)ev.Message).Text;
 
-                if (PoolHasMsg(text))
+                if (PoolHasMsg(text)) 
                 {
                     // 從記憶池查詢資料
                     string response = GetResponse(text);
